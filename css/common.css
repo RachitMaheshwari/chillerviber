@@ -1,0 +1,52 @@
+/*********************Common Css***************************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --primary-color: #000001;
+  --logo-color: #f5ff37;
+  --text-color: #9b8125;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-size: 16px;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'PT Serif', serif;
+  background-color: black!important;
+  /*overflow: hidden;*/
+}
+button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control{
+  border-radius: 0!important;
+  padding: 0.5rem!important;
+}
+
+.two-text-color{
+  color: white;
+}
+.two-text-color span{
+  color: var(--text-color);
+}
+.social-media-buttons{
+  width: 55px!important;
+  height: 55px!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-brand img{
+  height: 80px;
+  border-radius: 50%;
+}
+/*********************Common Css***************************/

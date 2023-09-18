@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiller Viber | Contact</title>
+
+  <link rel="icon" href="./img/logo.png" sizes="any"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="./img/logo.png"><!-- 180×180 -->
+  <link rel="manifest" href="./img/logo.png">
+
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/components.css">
+  <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link btn hover-btn" aria-current="page" href="index.html#index">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn hover-btn" href="index.html#whoweare">Who we are</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn hover-btn" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="nav-link btn hover-btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#">Location <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item">Gurgaon</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn hover-btn active" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container p-4 pt-5">
+	<div class="row">
+		<h2 class="two-text-color">Send <span>Message Us</span></h2>
+		<p style="color: white;">Dont hesitate to message us. We are very responsive in message.</p>
+	</div>
+
+	<div class="row g-3">
+		<form class="col-lg-8 col-md-8 col-sm-12 p-3" onsubmit="sendEmail(); reset(); return false;">
+			<div class="row g-3 p-3" style="background: whitesmoke;border-radius:5px;">
+			  <div class="col-md-6">
+			    <label for="inputName" class="form-label">Name</label>
+			    <input type="text" class="form-control" id="inputName" required placeholder="Enter Name">
+			  </div>
+			  <div class="col-md-6">
+			    <label for="inputEmail" class="form-label">Email</label>
+			    <input type="email" class="form-control" id="inputEmail" required placeholder="Email">
+			  </div>
+			  <div class="col-md-6">
+			    <label for="inputNumber" class="form-label">Phone</label>
+			    <input type="tel" class="form-control" id="inputNumber" pattern="[1-9]{1}[0-9]{9}" required placeholder="Mobile Number">
+			  </div>
+			  <div class="col-md-6">
+			    <label for="inputAddress" class="form-label">Address</label>
+			    <input type="text" class="form-control" id="inputAddress" required placeholder="Address">
+			  </div>
+			  <div class="col-12">
+			    <label for="inputMessage" class="form-label">Message</label>
+			    <textarea type="text" class="form-control" id="inputMessage" required placeholder="Enter Message" rows="4"></textarea>
+			  </div>
+			</div>
+      <div class="col-12 text-left mt-3">
+          <button class="btn main-btn" name="submit" type="submit" id="contact-submit" class="main-color-btn" data-submit="...Sending">Send</button> 
+        </div>
+		</form>
+		<div class="col-lg-4 col-md-4 col-sm-12 p-3" style="margin-top: 0!important;">
+			<div class="row " style="background: whitesmoke;border-radius: 5px;">
+				<h2 class="two-text-color" style="color:black">Contact <span>Details</span></h2>
+				<div>
+					<h6><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Address</h6>
+					<p>32A, Ground Floor, Tower B1, Spaze I-Tech Park Sector -49, Sohna Road, Gurugram- 122018</p>
+					
+				</div>
+				<hr>
+				<div>
+					<h6><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Send Mail Us</h6>
+					<p>info@chillerviber.com</p>
+				</div>
+				<hr>
+				<div>
+					<h6><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Front Desk</h6>
+					<p>+91-9289776500</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid p-0 my-5">
+  <!-- Footer -->
+  <footer class=" text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-5">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-xl-5 col-lg-5 col-md-5 col-12 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              <img src="./img/logo2.png" alt="logo" style="height: 45px;border-radius: 50%;">
+            </h6>
+            <p>
+              CHILLERVIBER is an occasion the executives organization in Gurgaon, India. We give modernized occasions to suit your targets CHILLERVIBER offers the best occasion the board benefits that are all around arranged and recollected consistently.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+             
+          <!-- Grid column -->
+          <div class="col-xl-3 col-lg-3 col-md-3 col-12 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Page Links</h6>
+            <p>
+              <a class="text-white" href="index.html#index">Home</a>
+            </p>
+            <p>
+              <a class="text-white" href="index.html#whoweare">Who we are</a>
+            </p>
+            <p>
+              <a class="text-white" href="gallery.html">Gallery</a>
+            </p>
+            <p>
+              <a class="text-white" href="contact.html">Contact Us</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- <hr class="w-100 clearfix d-md-none" /> -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-xl-4 col-lg-4 col-md-4 col-12 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> 32A, Ground Floor, Tower B1, Spaze I-Tech Park Sector -49, Sohna Road, Gurugram- 122018</p>
+
+            <p><i class="fas fa-envelope mr-3"></i> info@chillerviber.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91-9289776500</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91-8630320803</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+      <div class="text-lg-start">
+        <div class="container d-flex justify-content-center py-5">
+          <a type="button" href="https://www.youtube.com/channel/UCzojqHeIkv4QRnSXQUw9oog" class="social-media-buttons btn main-btn mx-2">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a type="button" href="https://www.instagram.com/chiller_viber/" class="social-media-buttons btn main-btn mx-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a type="button" href="https://twitter.com/Chiller_Viber" class="social-media-buttons btn main-btn mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a type="button" href="https://www.facebook.com/people/Chiller-Viber/100088427166278/" class="social-media-buttons btn main-btn mx-2">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-2">
+          © 2022 Copyright:
+          <a class="text-white">www.aidnex.com</a>
+        </div>
+        <!-- Copyright -->
+      </div>
+
+      <!-- End of .container -->
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- Footer -->
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/all.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("OzOa88vZH2Sn3ReH2");
+   })();
+</script>
+<script type="text/javascript">
+  function sendEmail() {
+    var params={
+      name: document.getElementById("inputName").value,
+      email: document.getElementById("inputEmail").value,
+      number: document.getElementById("inputNumber").value,
+      address: document.getElementById("inputAddress").value,
+      message: document.getElementById("inputMessage").value
+    }
+  
+    const serviceId="service_2u37byl"
+    const tempId="template_acktybq"
+    emailjs.send(serviceId, tempId, params).then((res)=>{
+      document.getElementById("inputName").value=""
+      document.getElementById("inputEmail").value=""
+      document.getElementById("inputNumber").value=""
+      document.getElementById("inputAddress").value=""
+      document.getElementById("inputMessage").value=""
+      console.log(res);
+      alert("message sent")
+    }).catch(err=>console.log(err));
+  }
+</script>
+</body>
+</html>

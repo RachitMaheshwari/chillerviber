@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiller Viber | Home</title>
+
+  <link rel="icon" href="./img/logo.png" sizes="any"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="./img/logo.png"><!-- 180×180 -->
+  <link rel="manifest" href="./img/logo.png">
+
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/components.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+</head>
+<style type="text/css">
+  body{
+    overflow: hidden;
+  }
+</style>
+<body>
+  <div id="canvas-container" style="position: fixed;z-index: -1;background: white;"></div>
+
+  <!-- Preloader -->
+  <div class="preloader-container">
+    <div class="preloader">
+      <div id="loader"></div>
+    </div>
+  </div>
+  <!-- Preloader -->
+  
+  <!-- Header -->
+  <header class="container header" id="index">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo2.png" loading="lazy" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link btn hover-btn active" aria-current="page" href="#index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn hover-btn" href="#whoweare">Who we are</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn hover-btn" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link btn hover-btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#">Location <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item">Gurgaon</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn hover-btn" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" m-auto mt-5 flex">
+      <div class="text">
+        <h1 class="mb-4">
+          Chiller Viber           
+        </h1>
+        <h2>Lets chill the vibes tonight...</h2>
+
+        <p class="mb-4">
+          Meeting and exceeding the expectations of our clients through ideas and delivery of excellent services.
+        </p>
+
+        <a class="btn main-btn mt-4" onclick="openForm()">Get Started</a>
+      </div>
+      
+      <div class="visual">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/slider/slider (11).jpg" alt="slider-img"></div>
+            <div class="swiper-slide"><img src="./img/slider/slider (12).jpg" alt="slider-img"></div>
+            <div class="swiper-slide"><img src="./img/slider/slider (13).jpg" alt="slider-img"></div>
+            <div class="swiper-slide"><img src="./img/slider/slider (14).jpg" alt="slider-img"></div>
+            <div class="swiper-slide"><img src="./img/slider/slider (15).jpg" alt="slider-img"></div>
+            <div class="swiper-slide"><img src="./img/slider/slider (16).jpg" alt="slider-img"></div>
+            <div class="swiper-slide"><img src="./img/slider/slider (17).jpg" alt="slider-img"></div>
+          </div>
+        </div>
+        <h4 class="two-text-color">Swipe to <span>view more <i class="fa-solid fa-arrows-left-right" style="transform: translateY(3px);"></i></span></h4>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Contact form Toggalable -->
+  <div class="contact-form-container">
+    <div class="contact-form" id="contact-form">
+      <div class="row" style="width: 90%">
+        <div class="close"><i class="fa-solid fa-x"></i></div>
+        <div class="col-lg-6 contact-form-img">
+          <img src="./img/form-img.png" loading="lazy" alt="form-image">
+        </div>
+        <div class="col-lg-6" style="background-color: black;padding: 10px;position: relative;">
+          <form id="contact" onsubmit="sendEmail(); reset(); return false;">
+            <h3>Quick Contact</h3>
+            <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <fieldset>
+              <input placeholder="Your name" id="inputName" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" id="inputEmail" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number" id="inputNumber" pattern="[1-9]{1}[0-9]{9}" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your Message Here..." id="inputMessage" tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>            
+              <a class="btn main-btn mx-3 form-submit" name="submit" type="submit" id="contact-submit"data-submit="...Sending">
+                Send
+              </a>
+            </fieldset>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact form Toggalable -->
+
+<!-- Story -->
+<div class="container we-have-section mt-3" id="whoweare">
+  <div class="row">
+    <div class="col-lg-11 text-center m-auto">
+      <h1 class="two-text-color">
+        We Have <span>Everything</span>
+      </h1>
+      <h2>
+        And The Skills You Need
+      </h2>
+      <p>
+        Every event is unique as such chiller viber events provide the attention to detail that makes success the common factor in Gurugram, India.
+        We conceptualize plan and produce events. We provide modernized occasions to suit your targets.<br><br>
+        <span style="color:#9b8125;background: rgba(0, 0, 0, 0.1);">
+          Planning your event? Want to create a great experience? Limited budget? Time costing?
+        </span><br>
+        CHILLERVIBER are equipped with a great team combination of experience, vision, young and creative members which works in 
+        collaboration with you to customize your ideas and bring idea to life and make the parties more interesting and astonishing as up to mark 
+        as per clients needs.
+        Hurray! Let's chill and vibe together.
+      </p>
+    </div>  
+  </div>
+</div>
+<!-- Story -->
+
+
+<!-- Reputation section cards -->
+<div class="container home-page-cards">
+  <div class="row m-5 text-center">
+    <h1 class="two-text-color">Our <span>Reputation<span></h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+      <div class="card shadow-lg p-3 bg-body rounded">
+        <div class="card-header">Our Misssion</div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>To provide the best customer experience in live entertainment.</li>
+            <li>Meeting and exceeding the expectations of our clients through innovative ideas and delivering excellent services.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+      <div class="card shadow-lg p-3 bg-body rounded">
+        <div class="card-header">Vision </div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>Attention</li>
+            <li>Customer services</li>
+            <li>Being approachable</li>
+            <li>More engaged</li>
+            <li>Helpful</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+      <div class="card shadow-lg p-3 bg-body rounded">
+        <div class="card-header">Core Values</div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>Integrity</li>
+            <li>Honesty</li>
+            <li>Trust</li>
+            <li>Accountability</li>
+            <li>Commitment to customers</li>
+            <li>Passion</li>
+            <li>Fun innovation </li>
+            <li>Quality</li>
+            <li>Professionalism</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Reputation section cards-->
+
+
+<!-- Home Page Gallery -->
+<div id="myModal" class="modal">
+  <span class="closeModal">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<div class="container-fluid gallery mt-4">
+  <div class="row text-center p-3">
+    <h1 class="two-text-color">
+      Let's <span>Talk</span>
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 col">
+      <div class="img-grid">
+        <figure class="effect-apollo img-fluid">
+          <img src="./img/homepage-gal/homepage-gal-1.jpg" loading="lazy" alt="Chiller Viber"/>
+          <figcaption>
+            <h2>Chiller Viber</h2>
+          </figcaption>     
+        </figure>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 col">
+      <div class="img-grid">
+        <figure class="effect-apollo img-fluid">
+          <img src="./img/homepage-gal/homepage-gal-9.jpg" loading="lazy" alt="Chiller Viber"/>
+          <figcaption>
+            <h2>Chiller Viber</h2>
+          </figcaption>     
+        </figure>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 col">
+      <div class="img-grid">
+        <figure class="effect-apollo img-fluid">
+          <img src="./img/homepage-gal/homepage-gal-6.jpg" loading="lazy" alt="Chiller Viber"/>
+          <figcaption>
+            <h2>Chiller Viber</h2>
+          </figcaption>     
+        </figure>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 col">
+      <div class="img-grid">
+        <figure class="effect-apollo img-fluid">
+          <img src="./img/homepage-gal/homepage-gal-4.jpg" loading="lazy" alt="Chiller Viber"/>
+          <figcaption>
+            <h2>Chiller Viber</h2>
+          </figcaption>     
+        </figure>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 col">
+      <div class="img-grid">
+        <figure class="effect-apollo img-fluid">
+          <img src="./img/homepage-gal/homepage-gal-5.jpg" loading="lazy" alt="Chiller Viber"/>
+          <figcaption>
+            <h2>Chiller Viber</h2>
+          </figcaption>     
+        </figure>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 col">
+      <div class="img-grid">
+        <figure class="effect-apollo img-fluid">
+          <img src="./img/homepage-gal/homepage-gal-8.jpg" loading="lazy" alt="Chiller Viber"/>
+          <figcaption>
+            <h2>Chiller Viber</h2>
+          </figcaption>     
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Home Page Gallery -->
+
+
+<!-- How we work cards -->
+<div class="container">
+  <div class="row p-5 text-center">
+    <h1 class="two-text-color">Our <span>Services</span></h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 my-4">
+      <div class="services-card shadow-lg p-3 bg-body rounded">
+        <div class="img-section mb-4 img-section1">
+          <img src="./img/2.jpg" loading="lazy" alt="services-img" style="width: 100%;height: 100%;object-fit: cover;">
+          <h2>Organiser</h2>
+        </div>
+        <div class="text-section text-center">
+          Event infrastructure<br>
+          Event media<br>
+          Event profit maximiser<br>
+          Corporate events<br>
+          College, fest events<br>
+          Branch activation<br>
+          Fashion show organizer event<br>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 my-4">
+      <div class="services-card shadow-lg p-3 bg-body rounded">
+        <div class="img-section mb-4 img-section2">
+          <img src="./img/1.jpg" loading="lazy" alt="services-img" style="width: 100%;height: 100%;object-fit: cover;">
+          <h2>Planner</h2>
+        </div>
+        <div class="text-section text-center">
+          Hybrid event<br>
+          Creative factor<br>
+          Venue sourcing<br>
+          Visual production<br>
+          Customer services<br>
+          Event design<br>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 my-4">
+      <div class="services-card shadow-lg p-3 bg-body rounded">
+        <div class="img-section mb-4 img-section3">
+          <img src="./img/management.jpg" loading="lazy" alt="services-img" style="width: 100%;height: 100%;object-fit: cover;">
+          <h2>Management</h2>
+        </div>
+        <div class="text-section text-center">
+          Event consulting<br>
+          Event production<br>
+          Team work<br>
+          Event entertainment<br>
+          Event marketing<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- How we work cards -->
+
+
+<!-- Accordian Question and answers -->
+<div class="container">
+  <div class="row p-5 text-center">
+    <h1 class="two-text-color">Frequently Asked <span>Questions</span></h1>
+  </div>
+  <div class="row">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item shadow rounded mb-2">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Remarkable Ones! Specifically:
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row p-2">
+              <ul class="col-lg-6" style="list-style-type: circle;">
+                <li>Sports Events</li>
+                <li>Corporate Celebrations</li>
+                <li>Team Building Activities</li>
+                <li>Virtual Events</li>
+                <li>Virtual Team Building Activities</li>
+                <li>Annual Meetings</li>
+              </ul>
+              <ul class="col-lg-6" style="list-style-type: circle;">
+                <li>Corporate Retreats</li>
+                <li>Branding & Product Launches</li>
+                <li>Festivals</li>
+                <li>Grand Openings</li>
+                <li>Team Building Events</li>
+              </ul>
+              Book your event today with CHILLERVIBER!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow rounded mb-2">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What Does It Cost To Work With You?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            CHILLERVIBER is a fee-based event management services company. Our charges are based upon an approximation of the hours we will spend working on your event. This charge is agreed upon at the time of contract and only changes should the scope of the project change. Let us talk if you want some quotes.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow rounded mb-2">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What Would You Say Is Your Greatest Strength As A Company?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">    
+            Without a doubt, we have the most experienced team of professionals in the industry. As it is always said that experience always helps in this event management industry, it helps us in making the right decisions, understanding events, problem solving skills, etc.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow rounded mb-2">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            What Size Events Do You Typically Manage?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The size of events was not a bar for us since our inception. As the best event management company since last many years there are not many “typical” situations when it comes to our clients and events – and we love it that way! One day we have a theme party event for a couple of hundred attendees, and then the next week we have a corporate retreat or a conference for a couple thousand. Book your event today!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow rounded mb-2">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            How Do I Contact You?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            If you are interested in having us plan your next event, please feel free to mail us at: info@chillerviber.com or to contact at +91-9289776500.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Accordian Question and answers -->
+
+
+<!-- Google Map -->
+
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.2073370757043!2d77.04424999999999!3d28.413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee53bcfbd45394be!2zMjjCsDI0JzQ2LjgiTiA3N8KwMDInMzkuMyJF!5e0!3m2!1sen!2sin!4v1670909017250!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- Google Map -->
+
+
+<!-- Footer -->
+<div class="container-fluid p-0 my-5">
+  <!-- Footer -->
+  <footer class=" text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-5">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-xl-5 col-lg-5 col-md-5 col-12 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              <img loading="lazy" src="./img/logo2.png" alt="logo" style="height: 45px;border-radius: 50%;">
+            </h6>
+            <p>
+              CHILLERVIBER is an occasion the executives organization in Gurgaon, India. We give modernized occasions to suit your targets CHILLERVIBER offers the best occasion the board benefits that are all around arranged and recollected consistently.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+             
+          <!-- Grid column -->
+          <div class="col-xl-3 col-lg-3 col-md-3 col-12 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Page Links</h6>
+            <p>
+              <a class="text-white" href="#index">Home</a>
+            </p>
+            <p>
+              <a class="text-white" href="#whoweare">Who we are</a>
+            </p>
+            <p>
+              <a class="text-white" href="gallery.html">Gallery</a>
+            </p>
+            <p>
+              <a class="text-white" href="contact.html">Contact Us</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- <hr class="w-100 clearfix d-md-none" /> -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-xl-4 col-lg-4 col-md-4 col-12 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> 32A, Ground Floor, Tower B1, Spaze I-Tech Park Sector -49, Sohna Road, Gurugram- 122018</p>
+
+            <p><i class="fas fa-envelope mr-3"></i> info@chillerviber.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91-9289776500</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91-8630320803</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+      <div class="text-lg-start">
+        <div class="container d-flex justify-content-center py-5">
+          <a type="button" href="https://www.youtube.com/channel/UCzojqHeIkv4QRnSXQUw9oog" class="social-media-buttons btn main-btn mx-2">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a type="button" href="https://www.instagram.com/chiller_viber/" class="social-media-buttons btn main-btn mx-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a type="button" href="https://twitter.com/Chiller_Viber" class="social-media-buttons btn main-btn mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a type="button" href="https://www.facebook.com/people/Chiller-Viber/100088427166278/" class="social-media-buttons btn main-btn mx-2">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-2">
+          © 2022 Copyright:
+          <a class="text-white">www.aidnex.com</a>
+        </div>
+        <!-- Copyright -->
+      </div>
+
+      <!-- End of .container -->
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- Footer -->
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./js/three.min.js"></script> 
+<script type="text/javascript" src="./js/all.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/ball.js" defer></script>
+
+<!-- Sending Email -->
+<script type="text/javascript">
+   (function(){
+      emailjs.init("OzOa88vZH2Sn3ReH2");
+   })();
+
+  function sendEmail() {
+    var params={
+      name: document.getElementById("inputName").value,
+      email: document.getElementById("inputEmail").value,
+      number: document.getElementById("inputNumber").value,
+      message: document.getElementById("inputMessage").value
+    }
+    const serviceId="service_2u37byl"
+    const tempId="template_acktybq"
+    emailjs.send(serviceId, tempId, params).then((res)=>{
+      document.getElementById("inputName").value=""
+      document.getElementById("inputEmail").value=""
+      document.getElementById("inputNumber").value=""
+      document.getElementById("inputMessage").value=""
+      console.log(res);
+      alert("message sent")
+    }).catch(err=>console.log(err));
+    return false;
+  }
+</script>
+<!-- Sending Email -->
+</body>
+</html>
